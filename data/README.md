@@ -10,6 +10,10 @@ https://opendata-ajuntament.barcelona.cat/data/es/dataset/arees-esbarjo-gossos-b
 ## Web con datos de perros en barcelona 
 https://www.elperiodico.com/es/barcelona/20170121/barcelona-perro-por-cada-diez-vecinos-5753322
 
+## CSV puntos wifi
+https://opendata-ajuntament.barcelona.cat/data/es/dataset/punts-wifi
+
+
 ## Web, está barcelona preparada para perros?
     85% son perros, un 13% gatos y un 0,36%, 
     Según datos del Colegio de Veterinarios de Catalunya, 
