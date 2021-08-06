@@ -1,11 +1,11 @@
-DISTRICT,POPULATION
-Ciutat Vella,10989
-Eixample,29234
-Gràcia,14693
-Horta-Guinardó,20872
-Les Corts,10352
-Nou Barris,22105
-Sant Andreu,19929
-Sant Martí,31948
-Sants-Montjuïc,21421
-Sarrià-Sant Gervasi,23743
+CODE_DISTRICT,DISTRICT,POPULATION
+1,Ciutat Vella,10989
+2,Eixample,29234
+3,Sants-Montjuïc,21421
+4,Les Corts,10352
+5,Sarrià-Sant Gervasi,23743
+6,Gràcia,14693
+7,Horta-Guinardó,20872
+8,Nou Barris,22105
+9,Sant Andreu,19929
+10,Sant Martí,31948
