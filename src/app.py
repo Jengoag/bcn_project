@@ -8,29 +8,79 @@ app = Flask("app")
 def hello_world():
     return "<p>Hello, BCN!</p>"
 
-@app.route("/animals")
-def search_animals():
+
+## POPULATION BY AGE 
+
+@app.route("/population_by_age")
+def search_population_by_age():
     query = f"""
-        SELECT * FROM animals;
+        SELECT age, total 
+        FROM population
+        ;
     """
     result = db.execute(query).fetchall()
 
     return json_response(result)
 
-@app.route("/total_population")
-def search_total_population():
+## POPULATION BY DISTRICT
+
+@app.route("/population_by_district")
+def search_population_by_district():
     query = f"""
-        SELECT population FROM population;
+        SELECT DISTRICT,
+        SUM(total) AS "TOTAL_POPULATION_BY_DISTRICT"
+        FROM POPULATION 
+        group BY district
+        ;
     """
     result = db.execute(query).fetchall()
 
     return json_response(result)
 
-@app.route("/population_district_total")
-def search_population_district_total():
+## RENTA BY DISTRICT
+
+@app.route("/renta_by_district")
+def search_renta_by_district():
     query = f"""
-        SELECT district, total FROM population;
+        SELECT district, import_anual 
+        FROM renta
+        ;
     """
     result = db.execute(query).fetchall()
 
     return json_response(result)
+
+## MEAN RENTA 
+
+@app.route("/mean_renta")
+def search_mean_renta():
+    query = f"""
+        SELECT AVG(import_anual) 
+        FROM renta
+        ;
+    """
+    result = db.execute(query).fetchall()
+
+    return json_response(result)
+
+
+## WIFI BY DISTRICT
+
+@app.route("/wifi_by_district")
+def wifi_by_district():
+    query = f"""
+        SELECT DISTRICT,
+        COUNT(district) AS "TOTAL_BY_DISTRICT"
+        FROM wifi 
+        group BY district
+        ;
+    """
+    result = db.execute(query).fetchall()
+
+    return json_response(result)
+
+
+
+
+
+

@@ -1,4 +1,4 @@
-NAME,CREATED,ROAD,addresses_district_id,addresses_district_name,LATITUDE,LONGITUDE
+NAME,CREATED,ROAD,CODE_DISTRICT,DISTRICT,LATITUDE,LONGITUDE
 Centre Cívic Pere Pruna,2000,Carrer de Ganduxer,5.0,Sarrià-Sant Gervasi,41.40320904460329,2.13132023534547
 Centre Cívic Pere Pruna,2000,Carrer de Ganduxer,5.0,Sarrià-Sant Gervasi,41.40320904460329,2.13132023534547
 Espai Lúdic Ambiental per a Famílies LaLudo,2000,Pas Institut Escola,1.0,Ciutat Vella,41.38737945873459,2.186898929399237
@@ -726,7 +726,6 @@ Sala d'Estudi,2016,C Sant Pere Més Baix,1.0,Ciutat Vella,41.388220707264985,2.1
 Espai Jove La Fontana,2009,C Gran de Gràcia,6.0,Gràcia,41.403342374883685,2.1528048898678125
 Espai Jove La Fontana,2009,C Gran de Gràcia,6.0,Gràcia,41.403342374883685,2.1528048898678125
 Punt de connexió Barcelona WiFi a la cruïlla del carrer Numància amb Avinguda Diagonal,2011,C Numància,4.0,Les Corts,41.38963947513398,2.1327928275094497
-Punt de connexió Barcelona WiFi a l'Avinguda Diagonal a prop l'edifici de La Caixa,2011,Av Diagonal,,,,
 Punt de connexió Barcelona WiFi a la cruïlla del Passeig de Gràcia amb el carrer Diputació,2011,Pg Gràcia,2.0,Eixample,41.3903926100143,2.1672268055289106
 Espai d'Adolescents Jovecardí,2010,Trav Corts,4.0,Les Corts,41.37933135791374,2.123827322512148
 Espai d'Adolescents Jovecardí,2010,Trav Corts,4.0,Les Corts,41.37933135791374,2.123827322512148
