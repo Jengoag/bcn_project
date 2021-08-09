@@ -1,11 +1,201 @@
-CODE_DISTRICT,DISTRICT,TOTAL
-1,Ciutat Vella,10989
-2,Eixample,29234
-3,Sants-Montjuïc,21421
-4,Les Corts,10352
-5,Sarrià-Sant Gervasi,23743
-6,Gràcia,14693
-7,Horta-Guinardó,20872
-8,Nou Barris,22105
-9,Sant Andreu,19929
-10,Sant Martí,31948
+CODE_DISTRICT,DISTRICT,AGE,TOTAL
+1,Ciutat Vella,0-4,19940
+1,Ciutat Vella,10-14,16114
+1,Ciutat Vella,15-19,17185
+1,Ciutat Vella,20-24,30606
+1,Ciutat Vella,25-29,53741
+1,Ciutat Vella,30-34,61477
+1,Ciutat Vella,35-39,56891
+1,Ciutat Vella,40-44,45896
+1,Ciutat Vella,45-49,37425
+1,Ciutat Vella,5-9,18362
+1,Ciutat Vella,50-54,30730
+1,Ciutat Vella,55-59,24790
+1,Ciutat Vella,60-64,19614
+1,Ciutat Vella,65-69,17350
+1,Ciutat Vella,70-74,14613
+1,Ciutat Vella,75-79,13721
+1,Ciutat Vella,80-84,13030
+1,Ciutat Vella,85-89,8975
+1,Ciutat Vella,90-94,4016
+1,Ciutat Vella,>=95,1120
+2,Eixample,0-4,50514
+2,Eixample,10-14,45999
+2,Eixample,15-19,47272
+2,Eixample,20-24,63297
+2,Eixample,25-29,97820
+2,Eixample,30-34,115828
+2,Eixample,35-39,115406
+2,Eixample,40-44,100602
+2,Eixample,45-49,91832
+2,Eixample,5-9,47957
+2,Eixample,50-54,90385
+2,Eixample,55-59,85288
+2,Eixample,60-64,77285
+2,Eixample,65-69,71627
+2,Eixample,70-74,58839
+2,Eixample,75-79,50798
+2,Eixample,80-84,50686
+2,Eixample,85-89,37259
+2,Eixample,90-94,18258
+2,Eixample,>=95,5672
+3,Sants-Montjuïc,0-4,36749
+3,Sants-Montjuïc,10-14,34147
+3,Sants-Montjuïc,15-19,34888
+3,Sants-Montjuïc,20-24,44367
+3,Sants-Montjuïc,25-29,63964
+3,Sants-Montjuïc,30-34,79644
+3,Sants-Montjuïc,35-39,80978
+3,Sants-Montjuïc,40-44,73641
+3,Sants-Montjuïc,45-49,67333
+3,Sants-Montjuïc,5-9,35460
+3,Sants-Montjuïc,50-54,64216
+3,Sants-Montjuïc,55-59,58864
+3,Sants-Montjuïc,60-64,50437
+3,Sants-Montjuïc,65-69,46710
+3,Sants-Montjuïc,70-74,37734
+3,Sants-Montjuïc,75-79,33786
+3,Sants-Montjuïc,80-84,33031
+3,Sants-Montjuïc,85-89,20746
+3,Sants-Montjuïc,90-94,8366
+3,Sants-Montjuïc,>=95,2092
+4,Les Corts,0-4,16752
+4,Les Corts,10-14,16442
+4,Les Corts,15-19,16703
+4,Les Corts,20-24,19720
+4,Les Corts,25-29,25933
+4,Les Corts,30-34,27981
+4,Les Corts,35-39,29451
+4,Les Corts,40-44,28549
+4,Les Corts,45-49,26224
+4,Les Corts,5-9,16950
+4,Les Corts,50-54,26755
+4,Les Corts,55-59,27452
+4,Les Corts,60-64,27995
+4,Les Corts,65-69,28227
+4,Les Corts,70-74,22847
+4,Les Corts,75-79,17731
+4,Les Corts,80-84,15777
+4,Les Corts,85-89,10513
+4,Les Corts,90-94,4670
+4,Les Corts,>=95,1373
+5,Sarrià-Sant Gervasi,0-4,36058
+5,Sarrià-Sant Gervasi,10-14,40400
+5,Sarrià-Sant Gervasi,15-19,38444
+5,Sarrià-Sant Gervasi,20-24,39732
+5,Sarrià-Sant Gervasi,25-29,40926
+5,Sarrià-Sant Gervasi,30-34,44833
+5,Sarrià-Sant Gervasi,35-39,51130
+5,Sarrià-Sant Gervasi,40-44,55327
+5,Sarrià-Sant Gervasi,45-49,53881
+5,Sarrià-Sant Gervasi,5-9,39749
+5,Sarrià-Sant Gervasi,50-54,51051
+5,Sarrià-Sant Gervasi,55-59,45086
+5,Sarrià-Sant Gervasi,60-64,40276
+5,Sarrià-Sant Gervasi,65-69,38986
+5,Sarrià-Sant Gervasi,70-74,33511
+5,Sarrià-Sant Gervasi,75-79,27765
+5,Sarrià-Sant Gervasi,80-84,26212
+5,Sarrià-Sant Gervasi,85-89,18938
+5,Sarrià-Sant Gervasi,90-94,9691
+5,Sarrià-Sant Gervasi,>=95,3170
+6,Gràcia,0-4,25740
+6,Gràcia,10-14,22069
+6,Gràcia,15-19,20625
+6,Gràcia,20-24,26539
+6,Gràcia,25-29,41697
+6,Gràcia,30-34,55744
+6,Gràcia,35-39,56925
+6,Gràcia,40-44,48668
+6,Gràcia,45-49,41807
+6,Gràcia,5-9,23866
+6,Gràcia,50-54,38776
+6,Gràcia,55-59,36220
+6,Gràcia,60-64,34138
+6,Gràcia,65-69,33002
+6,Gràcia,70-74,27143
+6,Gràcia,75-79,23338
+6,Gràcia,80-84,22043
+6,Gràcia,85-89,15659
+6,Gràcia,90-94,7546
+6,Gràcia,>=95,2343
+7,Horta-Guinardó,0-4,33878
+7,Horta-Guinardó,10-14,34080
+7,Horta-Guinardó,15-19,33484
+7,Horta-Guinardó,20-24,37788
+7,Horta-Guinardó,25-29,48092
+7,Horta-Guinardó,30-34,59008
+7,Horta-Guinardó,35-39,68468
+7,Horta-Guinardó,40-44,67473
+7,Horta-Guinardó,45-49,62891
+7,Horta-Guinardó,5-9,34976
+7,Horta-Guinardó,50-54,58730
+7,Horta-Guinardó,55-59,51065
+7,Horta-Guinardó,60-64,46951
+7,Horta-Guinardó,65-69,49221
+7,Horta-Guinardó,70-74,43257
+7,Horta-Guinardó,75-79,39544
+7,Horta-Guinardó,80-84,34865
+7,Horta-Guinardó,85-89,21785
+7,Horta-Guinardó,90-94,9255
+7,Horta-Guinardó,>=95,2460
+8,Nou Barris,0-4,36146
+8,Nou Barris,10-14,34792
+8,Nou Barris,15-19,34702
+8,Nou Barris,20-24,39645
+8,Nou Barris,25-29,46502
+8,Nou Barris,30-34,57297
+8,Nou Barris,35-39,68389
+8,Nou Barris,40-44,66412
+8,Nou Barris,45-49,61864
+8,Nou Barris,5-9,37265
+8,Nou Barris,50-54,55582
+8,Nou Barris,55-59,48360
+8,Nou Barris,60-64,43214
+8,Nou Barris,65-69,46525
+8,Nou Barris,70-74,42120
+8,Nou Barris,75-79,40413
+8,Nou Barris,80-84,36585
+8,Nou Barris,85-89,21157
+8,Nou Barris,90-94,7859
+8,Nou Barris,>=95,1543
+9,Sant Andreu,0-4,33772
+9,Sant Andreu,10-14,30545
+9,Sant Andreu,15-19,29975
+9,Sant Andreu,20-24,33628
+9,Sant Andreu,25-29,41250
+9,Sant Andreu,30-34,52626
+9,Sant Andreu,35-39,63578
+9,Sant Andreu,40-44,60665
+9,Sant Andreu,45-49,54320
+9,Sant Andreu,5-9,33712
+9,Sant Andreu,50-54,50734
+9,Sant Andreu,55-59,48023
+9,Sant Andreu,60-64,44428
+9,Sant Andreu,65-69,43180
+9,Sant Andreu,70-74,33209
+9,Sant Andreu,75-79,28492
+9,Sant Andreu,80-84,26210
+9,Sant Andreu,85-89,16800
+9,Sant Andreu,90-94,6810
+9,Sant Andreu,>=95,1691
+10,Sant Martí,0-4,53968
+10,Sant Martí,10-14,49368
+10,Sant Martí,15-19,47056
+10,Sant Martí,20-24,52763
+10,Sant Martí,25-29,68700
+10,Sant Martí,30-34,89460
+10,Sant Martí,35-39,104511
+10,Sant Martí,40-44,99641
+10,Sant Martí,45-49,90211
+10,Sant Martí,5-9,54364
+10,Sant Martí,50-54,83420
+10,Sant Martí,55-59,73641
+10,Sant Martí,60-64,64878
+10,Sant Martí,65-69,61370
+10,Sant Martí,70-74,50387
+10,Sant Martí,75-79,44297
+10,Sant Martí,80-84,41676
+10,Sant Martí,85-89,26094
+10,Sant Martí,90-94,10269
+10,Sant Martí,>=95,2481
