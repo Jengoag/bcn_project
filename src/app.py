@@ -50,7 +50,7 @@ def search_renta_by_district():
 
     return json_response(result)
 
-## MEAN RENTA 
+## MEAN RENTA ######### NO NECESARIA, STREAMLIT TIENE SU PROPIA FUNCION 
 
 @app.route("/mean_renta")
 def search_mean_renta():
@@ -70,7 +70,7 @@ def search_mean_renta():
 def search_wifi_by_district():
     query = f"""
         SELECT DISTRICT,
-        COUNT(district) AS TOTAL_WIFI_BY_DISTRICT
+        COUNT(district) AS "TOTAL_WIFI_BY_DISTRICT"
         FROM wifi 
         group BY district
         ;
@@ -80,7 +80,7 @@ def search_wifi_by_district():
     return json_response(result)
 
 
-## WIFI - RENTA BY DISTRICT
+## WIFI - RENTA BY DISTRICT  ######### SIN HACER 
 
 @app.route("/wifi_renta_by_district")
 def search_wifi_renta_by_district():
@@ -97,7 +97,7 @@ def search_wifi_renta_by_district():
 
     return json_response(result)
 
-## POPULATION - RENTA BY DISTRICT
+## POPULATION - RENTA BY DISTRICT ############ SIN HACER 
 
 @app.route("/population_renta_by_district")
 def search_population_renta_by_district():
