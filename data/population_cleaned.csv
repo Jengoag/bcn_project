@@ -1,5 +1,6 @@
 CODE_DISTRICT,DISTRICT,AGE,TOTAL
 1,Ciutat Vella,0-4,19940
+1,Ciutat Vella,05-9,18362
 1,Ciutat Vella,10-14,16114
 1,Ciutat Vella,15-19,17185
 1,Ciutat Vella,20-24,30606
@@ -8,7 +9,6 @@ CODE_DISTRICT,DISTRICT,AGE,TOTAL
 1,Ciutat Vella,35-39,56891
 1,Ciutat Vella,40-44,45896
 1,Ciutat Vella,45-49,37425
-1,Ciutat Vella,5-9,18362
 1,Ciutat Vella,50-54,30730
 1,Ciutat Vella,55-59,24790
 1,Ciutat Vella,60-64,19614
@@ -20,6 +20,7 @@ CODE_DISTRICT,DISTRICT,AGE,TOTAL
 1,Ciutat Vella,90-94,4016
 1,Ciutat Vella,>=95,1120
 2,Eixample,0-4,50514
+2,Eixample,05-9,47957
 2,Eixample,10-14,45999
 2,Eixample,15-19,47272
 2,Eixample,20-24,63297
@@ -28,7 +29,6 @@ CODE_DISTRICT,DISTRICT,AGE,TOTAL
 2,Eixample,35-39,115406
 2,Eixample,40-44,100602
 2,Eixample,45-49,91832
-2,Eixample,5-9,47957
 2,Eixample,50-54,90385
 2,Eixample,55-59,85288
 2,Eixample,60-64,77285
@@ -40,6 +40,7 @@ CODE_DISTRICT,DISTRICT,AGE,TOTAL
 2,Eixample,90-94,18258
 2,Eixample,>=95,5672
 3,Sants-Montjuïc,0-4,36749
+3,Sants-Montjuïc,05-9,35460
 3,Sants-Montjuïc,10-14,34147
 3,Sants-Montjuïc,15-19,34888
 3,Sants-Montjuïc,20-24,44367
@@ -48,7 +49,6 @@ CODE_DISTRICT,DISTRICT,AGE,TOTAL
 3,Sants-Montjuïc,35-39,80978
 3,Sants-Montjuïc,40-44,73641
 3,Sants-Montjuïc,45-49,67333
-3,Sants-Montjuïc,5-9,35460
 3,Sants-Montjuïc,50-54,64216
 3,Sants-Montjuïc,55-59,58864
 3,Sants-Montjuïc,60-64,50437
@@ -60,6 +60,7 @@ CODE_DISTRICT,DISTRICT,AGE,TOTAL
 3,Sants-Montjuïc,90-94,8366
 3,Sants-Montjuïc,>=95,2092
 4,Les Corts,0-4,16752
+4,Les Corts,05-9,16950
 4,Les Corts,10-14,16442
 4,Les Corts,15-19,16703
 4,Les Corts,20-24,19720
@@ -68,7 +69,6 @@ CODE_DISTRICT,DISTRICT,AGE,TOTAL
 4,Les Corts,35-39,29451
 4,Les Corts,40-44,28549
 4,Les Corts,45-49,26224
-4,Les Corts,5-9,16950
 4,Les Corts,50-54,26755
 4,Les Corts,55-59,27452
 4,Les Corts,60-64,27995
@@ -80,6 +80,7 @@ CODE_DISTRICT,DISTRICT,AGE,TOTAL
 4,Les Corts,90-94,4670
 4,Les Corts,>=95,1373
 5,Sarrià-Sant Gervasi,0-4,36058
+5,Sarrià-Sant Gervasi,05-9,39749
 5,Sarrià-Sant Gervasi,10-14,40400
 5,Sarrià-Sant Gervasi,15-19,38444
 5,Sarrià-Sant Gervasi,20-24,39732
@@ -88,7 +89,6 @@ CODE_DISTRICT,DISTRICT,AGE,TOTAL
 5,Sarrià-Sant Gervasi,35-39,51130
 5,Sarrià-Sant Gervasi,40-44,55327
 5,Sarrià-Sant Gervasi,45-49,53881
-5,Sarrià-Sant Gervasi,5-9,39749
 5,Sarrià-Sant Gervasi,50-54,51051
 5,Sarrià-Sant Gervasi,55-59,45086
 5,Sarrià-Sant Gervasi,60-64,40276
@@ -100,6 +100,7 @@ CODE_DISTRICT,DISTRICT,AGE,TOTAL
 5,Sarrià-Sant Gervasi,90-94,9691
 5,Sarrià-Sant Gervasi,>=95,3170
 6,Gràcia,0-4,25740
+6,Gràcia,05-9,23866
 6,Gràcia,10-14,22069
 6,Gràcia,15-19,20625
 6,Gràcia,20-24,26539
@@ -108,7 +109,6 @@ CODE_DISTRICT,DISTRICT,AGE,TOTAL
 6,Gràcia,35-39,56925
 6,Gràcia,40-44,48668
 6,Gràcia,45-49,41807
-6,Gràcia,5-9,23866
 6,Gràcia,50-54,38776
 6,Gràcia,55-59,36220
 6,Gràcia,60-64,34138
@@ -120,6 +120,7 @@ CODE_DISTRICT,DISTRICT,AGE,TOTAL
 6,Gràcia,90-94,7546
 6,Gràcia,>=95,2343
 7,Horta-Guinardó,0-4,33878
+7,Horta-Guinardó,05-9,34976
 7,Horta-Guinardó,10-14,34080
 7,Horta-Guinardó,15-19,33484
 7,Horta-Guinardó,20-24,37788
@@ -128,7 +129,6 @@ CODE_DISTRICT,DISTRICT,AGE,TOTAL
 7,Horta-Guinardó,35-39,68468
 7,Horta-Guinardó,40-44,67473
 7,Horta-Guinardó,45-49,62891
-7,Horta-Guinardó,5-9,34976
 7,Horta-Guinardó,50-54,58730
 7,Horta-Guinardó,55-59,51065
 7,Horta-Guinardó,60-64,46951
@@ -140,6 +140,7 @@ CODE_DISTRICT,DISTRICT,AGE,TOTAL
 7,Horta-Guinardó,90-94,9255
 7,Horta-Guinardó,>=95,2460
 8,Nou Barris,0-4,36146
+8,Nou Barris,05-9,37265
 8,Nou Barris,10-14,34792
 8,Nou Barris,15-19,34702
 8,Nou Barris,20-24,39645
@@ -148,7 +149,6 @@ CODE_DISTRICT,DISTRICT,AGE,TOTAL
 8,Nou Barris,35-39,68389
 8,Nou Barris,40-44,66412
 8,Nou Barris,45-49,61864
-8,Nou Barris,5-9,37265
 8,Nou Barris,50-54,55582
 8,Nou Barris,55-59,48360
 8,Nou Barris,60-64,43214
@@ -160,6 +160,7 @@ CODE_DISTRICT,DISTRICT,AGE,TOTAL
 8,Nou Barris,90-94,7859
 8,Nou Barris,>=95,1543
 9,Sant Andreu,0-4,33772
+9,Sant Andreu,05-9,33712
 9,Sant Andreu,10-14,30545
 9,Sant Andreu,15-19,29975
 9,Sant Andreu,20-24,33628
@@ -168,7 +169,6 @@ CODE_DISTRICT,DISTRICT,AGE,TOTAL
 9,Sant Andreu,35-39,63578
 9,Sant Andreu,40-44,60665
 9,Sant Andreu,45-49,54320
-9,Sant Andreu,5-9,33712
 9,Sant Andreu,50-54,50734
 9,Sant Andreu,55-59,48023
 9,Sant Andreu,60-64,44428
@@ -180,6 +180,7 @@ CODE_DISTRICT,DISTRICT,AGE,TOTAL
 9,Sant Andreu,90-94,6810
 9,Sant Andreu,>=95,1691
 10,Sant Martí,0-4,53968
+10,Sant Martí,05-9,54364
 10,Sant Martí,10-14,49368
 10,Sant Martí,15-19,47056
 10,Sant Martí,20-24,52763
@@ -188,7 +189,6 @@ CODE_DISTRICT,DISTRICT,AGE,TOTAL
 10,Sant Martí,35-39,104511
 10,Sant Martí,40-44,99641
 10,Sant Martí,45-49,90211
-10,Sant Martí,5-9,54364
 10,Sant Martí,50-54,83420
 10,Sant Martí,55-59,73641
 10,Sant Martí,60-64,64878
