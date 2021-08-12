@@ -148,8 +148,8 @@ def search_area_by_district():
 @app.route("/animals_and_areas_by_district")
 def search_animals_and_areas_by_district():
     query = f"""
-        SELECT animals.district, animals.total as total_animals,
-        COUNT(areaperros.district) AS TOTAL_AREA_BY_DISTRICT
+        SELECT animals.district, animals.total as "total_animals",
+        COUNT(areaperros.district) AS "TOTAL_AREA_BY_DISTRICT"
         FROM animals, areaperros
         WHERE animals.district = areaperros.district
         GROUP BY animals.district, animals.total, areaperros.district
