@@ -8,7 +8,6 @@ app = Flask("app")
 def hello():
     return "<p>Hello, BCN!</p>"
 
-
 ## POPULATION BY AGE 
 
 @app.route("/population_by_age")
@@ -86,7 +85,7 @@ def search_wifi_by_district():
 def search_wifi_renta_by_district():
     query = f"""
         SELECT renta.district, renta.import_anual,
-        count(wifi.district) as TOTAL_WIFI_BY_DISTRICT
+        count(wifi.district) as "TOTAL_WIFI_BY_DISTRICT"
         FROM renta, wifi
         WHERE renta.district = wifi.district
         GROUP BY renta.district, renta.import_anual, wifi.district
@@ -103,7 +102,7 @@ def search_wifi_renta_by_district():
 def search_population_renta_by_district():
     query = f"""
         SELECT renta.district, renta.import_anual,
-        sum(population.total) as TOTAL_POPULATION_BY_DISTRICT
+        sum(population.total) as "TOTAL_POPULATION_BY_DISTRICT"
         FROM renta, population
         WHERE renta.district = population.district
         GROUP BY renta.district, renta.import_anual, population.district
@@ -144,7 +143,7 @@ def search_area_by_district():
 
     return json_response(result)
 
-# ANIMALS AND AREAS BY DISTRICT
+# ANIMALS AND AREAS BY DISTRICT  ##### sin hacer 
 
 @app.route("/animals_and_areas_by_district")
 def search_animals_and_areas_by_district():
@@ -165,7 +164,7 @@ def search_animals_and_areas_by_district():
 @app.route("/population_0_14_by_district")
 def search_population_0_14_by_district():
     query = f"""
-        SELECT district, SUM(total) FROM population
+        SELECT district, SUM(total) as population_0_14 FROM population
         WHERE age LIKE '0-4' or AGE LIKE '5-9'or AGE LIKE '10-14'
         GROUP BY DISTRICT
         ORDER BY DISTRICT
@@ -180,12 +179,14 @@ def search_population_0_14_by_district():
 def search_parques_by_district():
     query = f"""
         SELECT DISTRICT,
-        COUNT(district) AS TOTAL_PARQUES_BY_DISTRICT
+        COUNT(district) AS "TOTAL_PARQUES_BY_DISTRICT"
         FROM parques 
         group BY district
         ;
     """
     result = db.execute(query).fetchall()
+
+    print(result)
 
     return json_response(result)
 
