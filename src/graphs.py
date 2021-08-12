@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 import streamlit as st
 
+
 def population_by_age():
     result = requests.get("http://localhost:5000/population_by_age").json()
 
@@ -10,16 +11,28 @@ def population_by_age():
         columns=['age', 'total'])
 
     st.vega_lite_chart(df, 
-    {    
-        "title": {"text": "Population by Age", "anchor": "middle", "fontSize": 30, "color": ["#6C04A4"]},
+{
+  "layer": [
+    {
+        "title": {"text": "Population by Age", "anchor": "middle", "fontSize": 30, "color": ["#9C09A4"]},
         "width": 800,
-        "height": 400,
-        "mark": {"type": "bar", "color": ["#6C04A4"]},
+        "height": 600,
+        "mark": "bar",
         "encoding": {
-            'x': {"title": "Population", "aggregate": "sum", "scale": {"domain": [0,700000]}, 'field': 'total'},
-            'y': {"title": "Age", 'field': 'age'},
-        },
-    })
+            'y': {"title": "Population", "aggregate": "sum", "scale": {"domain": [0,700000]}, 'field': 'total'},
+            'x': {"title": "Age", 'field': 'age'}
+        }
+      },
+    {
+        "mark": "rule",
+        "encoding": {
+         "y": {"aggregate": "mean", "field": "age"},
+            "color": {"value": "red"},
+            "size": {"value": 3}
+      }
+    }
+  ]
+})
 
 def population_by_district():
     result = requests.get("http://localhost:5000/population_by_district").json()
@@ -166,93 +179,6 @@ def parques_by_district():
         },
         })
 
-def areas_and_animals_by_district():
-    result = requests.get("http://localhost:5000//animals_and_areas_by_district").json()
-
-    df = pd.DataFrame(
-        result,
-        columns=["TOTAL_AREA_BY_DISTRICT", 'total_animals', 'district'])
-
-    st.vega_lite_chart(df,{ 
-    "scales": [
-    {
-      "name": "xscale",
-      "type": "band",
-      "domain": {"data": "table", "field": "district"},
-      "range": "width",
-      "padding": 0.2
-    },
-    {
-      "name": "yscale",
-      "type": "linear",
-      "domain": {"data": "table", "field": "value"},
-      "range": "height",
-      "round": True,
-      "zero": True,
-      "nice": True
-    },
-    {
-      "name": "color",
-      "type": "ordinal",
-      "domain": {"data": "table", "field": "total_animals"},
-      "range": {"scheme": "category20"}
-    }
-  ],
-
-  "axes": [
-    {"orient": "left", "scale": "yscale", "tickSize": 0, "labelPadding": 4, "zindex": 1},
-    {"orient": "bottom", "scale": "xscale"}
-  ],
-
-  "marks": [
-    {
-      "type": "group",
-      "from": {
-        "facet": {
-          "data": "table",
-          "name": "facet",
-          "groupby": "district"
-        }
-      },
-
-      "encode": {
-        "enter": {
-          "x": {"scale": "xscale", "field": "district"}
-        }
-      },
-
-      "signals": [
-        {"name": "width", "update": "bandwidth('xscale')"}
-      ],
-
-      "scales": [
-        {
-          "name": "pos",
-          "type": "band",
-          "range": "width",
-          "domain": {"data": "facet", "field": "total_animals"}
-        }
-      ],
-
-      "marks": [
-        {
-          "name": "bars",
-          "from": {"data": "facet"},
-          "type": "rect",
-          "encode": {
-            "enter": {
-              "x": {"scale": "pos", "field": "total_animals"},
-              "width": {"scale": "pos", "band": 1},
-              "y": {"scale": "yscale", "field": "TOTAL_AREA_BY_DISTRICT"},
-              "y2": {"scale": "yscale", "value": 0},
-              "fill": {"scale": "color", "field": "total_animals"}
-            }
-          }
-        }
-      ]
-    }
-  ]}
-  )
 
 
 
@@ -282,5 +208,3 @@ def get_graph_by_option(option):
     if option=='Parks by District':
         parques_by_district()
     
-    if option=='Areas and Animals by District':
-        areas_and_animals_by_district()

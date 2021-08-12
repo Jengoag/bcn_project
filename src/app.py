@@ -79,7 +79,7 @@ def search_wifi_by_district():
     return json_response(result)
 
 
-## WIFI - RENTA BY DISTRICT  ######### SIN HACER 
+## WIFI - RENTA BY DISTRICT  ######### NO TIENE SENTIDO GRAFICA CONJUNTA POR LOS VALORES 
 
 @app.route("/wifi_renta_by_district")
 def search_wifi_renta_by_district():
@@ -96,7 +96,7 @@ def search_wifi_renta_by_district():
 
     return json_response(result)
 
-## POPULATION - RENTA BY DISTRICT ############ SIN HACER 
+## POPULATION - RENTA BY DISTRICT ############ NO TIENE SENTIDO GRAFICA CONJUNTA POR LOS VALORES 
 
 @app.route("/population_renta_by_district")
 def search_population_renta_by_district():
@@ -143,7 +143,7 @@ def search_area_by_district():
 
     return json_response(result)
 
-# ANIMALS AND AREAS BY DISTRICT  ##### sin hacer 
+# ANIMALS AND AREAS BY DISTRICT  ##### LA GRAFICA NO TIENE SENTIDO CONJUNTA POR LOS VALORES  
 
 @app.route("/animals_and_areas_by_district")
 def search_animals_and_areas_by_district():
@@ -191,7 +191,7 @@ def search_parques_by_district():
     return json_response(result)
 
 
-# POPULATION 0-14 AND PARQUES BY DISTRICT (NO FUNCIONA )
+# POPULATION 0-14 AND PARQUES BY DISTRICT ######LA GRAFICA NO TIENE SENTIDO CONJUNTA POR LOS VALORES 
 
 @app.route("/population_0_14_and_parques_by_district")
 def search_population_0_14_and_parques_by_district():
