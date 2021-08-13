@@ -11,28 +11,19 @@ def population_by_age():
         columns=['age', 'total'])
 
     st.vega_lite_chart(df, 
-{
-  "layer": [
-    {
-        "title": {"text": "Population by Age", "anchor": "middle", "fontSize": 30, "color": ["#9C09A4"]},
-        "width": 800,
-        "height": 600,
-        "mark": "bar",
+{   
+    "title": {"text": "Population by Age", "anchor": "middle", "fontSize": 30, "color": ["#A08508"]},
+    "width": 800,
+    "height": 600,
+    "mark": {"type": "bar", "color": ["#A08508"]},
         "encoding": {
             'y': {"title": "Population", "aggregate": "sum", "scale": {"domain": [0,700000]}, 'field': 'total'},
             'x': {"title": "Age", 'field': 'age'}
-        }
-      },
-    {
-        "mark": "rule",
-        "encoding": {
-         "y": {"aggregate": "mean", "field": "age"},
-            "color": {"value": "red"},
-            "size": {"value": 3}
-      }
-    }
-  ]
-})
+            }
+    })
+
+
+
 
 def population_by_district():
     result = requests.get("http://localhost:5000/population_by_district").json()
@@ -180,7 +171,42 @@ def parques_by_district():
         })
 
 
+############### MAPS 
 
+
+def map_parques_by_district():
+    result = requests.get("http://localhost:5000//xy_parques").json()
+    df = pd.DataFrame(
+        result,
+        columns=['latitude', 'longitude'])
+
+    st.map(df)
+
+def map_areas_by_district():
+    result = requests.get("http://localhost:5000//xy_area").json()
+    df = pd.DataFrame(
+        result,
+        columns=['latitude', 'longitude'])
+
+    st.map(df)
+
+
+################ TEXT
+
+    
+
+####################   CONDITIONAL TEXT
+    
+def get_text_by_option(option):  
+    if option=="Map Dog's Areas":
+        st.markdown("<h1 style='text-align: center; color: #A08508 '>Map Dog's Areas</h1>", unsafe_allow_html = True)
+  
+    if option=='Map Parks':
+        st.markdown("<h1 style='text-align: center; color: #A08508 '>Map Parks</h1>", unsafe_allow_html = True)
+
+
+
+################# CONDITIONAL GRAPHS AND MAPS
 
 def get_graph_by_option(option):
 
@@ -207,4 +233,11 @@ def get_graph_by_option(option):
 
     if option=='Parks by District':
         parques_by_district()
+
+
+def get_map_by_option(option):  
+    if option=='Map Parks':
+        map_parques_by_district()
     
+    if option=="Map Dog's Areas":
+        map_areas_by_district()

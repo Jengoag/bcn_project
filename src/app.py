@@ -78,7 +78,6 @@ def search_wifi_by_district():
 
     return json_response(result)
 
-
 ## WIFI - RENTA BY DISTRICT  ######### NO TIENE SENTIDO GRAFICA CONJUNTA POR LOS VALORES 
 
 @app.route("/wifi_renta_by_district")
@@ -90,7 +89,6 @@ def search_wifi_renta_by_district():
         WHERE renta.district = wifi.district
         GROUP BY renta.district, renta.import_anual, wifi.district
     ;  
- 
     """
     result = db.execute(query).fetchall()
 
@@ -107,7 +105,6 @@ def search_population_renta_by_district():
         WHERE renta.district = population.district
         GROUP BY renta.district, renta.import_anual, population.district
     ;  
- 
     """
     result = db.execute(query).fetchall()
 
@@ -238,6 +235,9 @@ def xy_area():
     result = db.execute(query).fetchall()
 
     return json_response(result)
+
+
+
 
 
 

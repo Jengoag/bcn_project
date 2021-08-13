@@ -1,12 +1,11 @@
 import streamlit as st
 import graphs
 from PIL import Image
-import numpy as np
-import pandas as pd
+import targets
 
 ################### title 
 
-st.title('Hello, Bcn!')
+st.markdown("<h1 style='text-align: center; color: #942953 '>Hello, BCN!</h1>", unsafe_allow_html = True)
 
 title_image = Image.open("./img/skyline.png")
 st.image(title_image)
@@ -14,10 +13,7 @@ st.image(title_image)
 
 st.markdown("Do you want to know ***'Barcelona'***?")
 st.markdown("This application is intended to explore the set of data found on the web. It contains basic data for Barcelona, ​​grouped by districts.")
-
-
-st.write(" Empezamos ")     
-
+   
 
 ###################  SIDEBAR
 
@@ -27,16 +23,19 @@ option=st.sidebar.selectbox('',('Select graph', 'Population by Age','Population 
 
 graphs.get_graph_by_option(option)
 
-st.sidebar.title('Comparative Graph')
-option=st.sidebar.selectbox(' ',('Select graph', 'Population by Age','Population by District', 'Rent by Distric', 'Wifi by District', 'Animals by District', 'Areas by District', 'Population 0-14 by District','Parks by District'))
+st.sidebar.title('Choose District')
+district = st.sidebar.selectbox('  ',('Select district', 'Ciutat Vella', 'Horta-Guinardó', 'Sants-Montjuïc', 'Sarrià-Sant Gervasi', 'Sant Martí', 'Gràcia', 'Eixample', 'Nou Barris', 'Sant Andreu', 'Les Corts'))
 
-graphs.get_graph_by_option(option)
+targets.get_target_by_district(district)
 
-#################### POSTER 
+st.sidebar.title('Choose your Map')
+map_option=st.sidebar.selectbox('  ',('Select Map', 'Map Parks', "Map Dog's Areas"))
 
-map_data = pd.DataFrame(
-    np.random.randn(10, 2) / [20, 50] + [37.76, -122.4],
-    columns=['lat', 'lon'])
+graphs.get_text_by_option(map_option)
+graphs.get_map_by_option(map_option)
 
-st.map(map_data)
+
+
+
+
 
