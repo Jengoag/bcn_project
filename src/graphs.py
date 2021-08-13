@@ -33,10 +33,10 @@ def population_by_district():
 
     st.vega_lite_chart(df, 
     {    
-        "title": {"text": "Population by District", "anchor": "middle", "fontSize": 30, "color": ["#9C09A4"]},
+        "title": {"text": "Population by District", "anchor": "middle", "fontSize": 30, "color": ["#A02922"]},
         "width": 800,
         "height": 400,
-        "mark": {"type": "bar", "color": ["#9C09A4"]},
+        "mark": {"type": "bar", "color": ["#A02922"]},
         "encoding": {
             'x': {"title": "POPULATION", "aggregate": "sum", "scale": {"domain": [0,1_400_000]}, 'field': 'TOTAL_POPULATION_BY_DISTRICT'},
             'y': {"title": "District", 'field': 'district'},
@@ -52,12 +52,12 @@ def renta_by_district():
 
     st.vega_lite_chart(df, 
     {    
-        "title": {"text": "Rent by District", "anchor": "middle", "fontSize": 30, "color": ["#4C08A4"]},
+        "title": {"text": "Rent by District", "anchor": "middle", "fontSize": 30, "color": ["#83a971"]},
         "width": 1000,
         "height": 400,
         "layer": [
             {
-            "mark": {"type": "bar", "color": ["#4C09A4"]},
+            "mark": {"type": "bar", "color": ["#83a971"]},
             "encoding": {
                 'x': {"title": "Anual Rent", "aggregate": "sum", "scale": {"domain": [0,33_000]}, 'field': 'import_anual'},
                 'y': {"title": "District", 'field': 'district'}
@@ -83,10 +83,10 @@ def wifi_by_district():
 
     st.vega_lite_chart(df, 
     {    
-        "title": {"text": "Wifi by District", "anchor": "middle", "fontSize": 30, "color": ["#FFC300"]},
+        "title": {"text": "Wifi by District", "anchor": "middle", "fontSize": 30, "color": ["#746393"]},
         "width": 800,
         "height": 400,
-        "mark": {"type": "bar", "color": ["#FFC300"]},
+        "mark": {"type": "bar", "color": ["#746393"]},
         "encoding": {
             'x': {"title": "WIFI", "aggregate": "sum", "scale": {"domain": [0, 300]}, 'field': 'TOTAL_WIFI_BY_DISTRICT'},
             'y': {"title": "District", 'field': 'district'},
@@ -103,10 +103,10 @@ def animals_by_district():
 
     st.vega_lite_chart(df, 
     {    
-        "title": {"text": "Animals by District", "anchor": "middle", "fontSize": 30, "color": ["#FFC300"]},
+        "title": {"text": "Animals by District", "anchor": "middle", "fontSize": 30, "color": ["#e08f78"]},
         "width": 800,
         "height": 400,
-        "mark": {"type": "bar", "color": ["#FFC300"]},
+        "mark": {"type": "bar", "color": ["#e08f78"]},
         "encoding": {
             'x': {"title": "Animals", "aggregate": "sum", "scale": {"domain": [0, 10_000]}, 'field': 'total'},
             'y': {"title": "District", 'field': 'district'},
@@ -122,34 +122,16 @@ def area_by_district():
 
     st.vega_lite_chart(df, 
     {    
-        "title": {"text": "Areas by District", "anchor": "middle", "fontSize": 30, "color": ["#FFC300"]},
+        "title": {"text": "Areas by District", "anchor": "middle", "fontSize": 30, "color": ["#3f7284"]},
         "width": 800,
         "height": 400,
-        "mark": {"type": "bar", "color": ["#FFC300"]},
+        "mark": {"type": "bar", "color": ["#3f7284"]},
         "encoding": {
             'x': {"title": "Areas", "aggregate": "sum", "scale": {"domain": [0, 20]}, 'field': "TOTAL_AREA_BY_DISTRICT"},
             'y': {"title": "District", 'field': 'district'},
         },
         })
 
-def population_0_14_by_district():
-    result = requests.get("http://localhost:5000/population_0_14_by_district").json()
-
-    df = pd.DataFrame(
-        result,
-        columns=["population_0_14", 'district'])
-
-    st.vega_lite_chart(df, 
-    {    
-        "title": {"text": "Population 0-14 by District", "anchor": "middle", "fontSize": 30, "color": ["#FFC300"]},
-        "width": 800,
-        "height": 400,
-        "mark": {"type": "bar", "color": ["#FFC300"]},
-        "encoding": {
-            'x': {"title": "Population", "aggregate": "sum", "scale": {"domain": [0, 105000]}, 'field': "population_0_14"},
-            'y': {"title": "District", 'field': 'district'},
-        },
-        })
 
 def parques_by_district():
     result = requests.get("http://localhost:5000/parques_by_district").json()
@@ -160,10 +142,10 @@ def parques_by_district():
 
     st.vega_lite_chart(df, 
     {    
-        "title": {"text": "Parks by District", "anchor": "middle", "fontSize": 30, "color": ["#FFC300"]},
+        "title": {"text": "Parks by District", "anchor": "middle", "fontSize": 30, "color": ["##dc7082"]},
         "width": 800,
         "height": 400,
-        "mark": {"type": "bar", "color": ["#FFC300"]},
+        "mark": {"type": "bar", "color": ["#dc7082"]},
         "encoding": {
             'x': {"title": "Parks", "aggregate": "sum", "scale": {"domain": [0, 120]}, 'field': 'TOTAL_PARQUES_BY_DISTRICT'},
             'y': {"title": "District", 'field': 'district'},
