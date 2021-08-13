@@ -2,6 +2,7 @@ import pandas as pd
 import requests
 import streamlit as st
 
+################# FUNCTION GRAPHS
 
 def population_by_age():
     result = requests.get("http://localhost:5000/population_by_age").json()
@@ -21,8 +22,6 @@ def population_by_age():
             'x': {"title": "Age", 'field': 'age'}
             }
     })
-
-
 
 
 def population_by_district():
@@ -113,6 +112,7 @@ def animals_by_district():
             'y': {"title": "District", 'field': 'district'},
         },
         })
+
 def area_by_district():
     result = requests.get("http://localhost:5000/area_by_district").json()
 
@@ -171,7 +171,7 @@ def parques_by_district():
         })
 
 
-############### MAPS 
+############### FUNCTIONS MAPS
 
 
 def map_parques_by_district():
@@ -191,11 +191,7 @@ def map_areas_by_district():
     st.map(df)
 
 
-################ TEXT
-
-    
-
-####################   CONDITIONAL TEXT
+##################   FUNCTION OPTIONS TEXT
     
 def get_text_by_option(option):  
     if option=="Map Dog's Areas":
@@ -205,8 +201,7 @@ def get_text_by_option(option):
         st.markdown("<h1 style='text-align: center; color: #A08508 '>Map Parks</h1>", unsafe_allow_html = True)
 
 
-
-################# CONDITIONAL GRAPHS AND MAPS
+################# FUNCTION OPTIONS GRAPHS AND MAPS
 
 def get_graph_by_option(option):
 
