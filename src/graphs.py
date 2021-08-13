@@ -122,12 +122,12 @@ def area_by_district():
 
     st.vega_lite_chart(df, 
     {    
-        "title": {"text": "Areas by District", "anchor": "middle", "fontSize": 30, "color": ["#3f7284"]},
+        "title": {"text": "Dog's Areas by District", "anchor": "middle", "fontSize": 30, "color": ["#3f7284"]},
         "width": 800,
         "height": 400,
         "mark": {"type": "bar", "color": ["#3f7284"]},
         "encoding": {
-            'x': {"title": "Areas", "aggregate": "sum", "scale": {"domain": [0, 20]}, 'field': "TOTAL_AREA_BY_DISTRICT"},
+            'x': {"title": "Dog's Areas", "aggregate": "sum", "scale": {"domain": [0, 20]}, 'field': "TOTAL_AREA_BY_DISTRICT"},
             'y': {"title": "District", 'field': 'district'},
         },
         })
@@ -202,7 +202,7 @@ def get_graph_by_option(option):
     if option=='Animals by District':
         animals_by_district()
 
-    if option=='Areas by District':
+    if option=="Dog's Areas by District":
         area_by_district()
 
     if option=='Population 0-14 by District':
