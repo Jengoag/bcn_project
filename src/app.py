@@ -6,7 +6,7 @@ app = Flask("app")
 
 @app.route("/")
 def hello():
-    return "<p>Hello, BCN!</p>"
+    return "<p>Hello, BCN!</p> <br> /population_by_age <br> /population_by_district <br> /renta_by_district <br> /wifi_by_district <br> /animals_by_district <br> /area_by_district <br> /population_0_14_by_district <br> /parques_by_district <br> /xy_area <br>/xy_parques"
 
 ## POPULATION BY AGE 
 

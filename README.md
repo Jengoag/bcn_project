@@ -15,12 +15,6 @@
 - [Open Data Renta](https://opendata-ajuntament.barcelona.cat/data/es/dataset/renda-disponible-llars-bcn)
 
 
-### PARTS
-
-- Postgres - Data
-- Flask - Api
-- Streamlit - Frontend
-
 ###  POSTGRES - DATA 
 
 <img src="./src/img/postgresimg.png" width="50" height="50">
