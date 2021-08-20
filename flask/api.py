@@ -2,7 +2,7 @@ from flask import Flask
 from connection_sql import db
 from utils.json_response import json_response
 
-app = Flask("app")
+app = Flask("api")
 
 @app.route("/")
 def hello():

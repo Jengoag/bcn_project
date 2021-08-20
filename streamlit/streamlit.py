@@ -1,13 +1,13 @@
 import streamlit as st
 import graphs
 from PIL import Image
-import targets
+import card
 
 ################### title 
 
 st.markdown("<h1 style='text-align: center; color: #942953 '>Hello, BCN!</h1>", unsafe_allow_html = True)
 
-title_image = Image.open("./img/skyline.png")
+title_image = Image.open("./src/img/skyline.png")
 st.image(title_image)
 
 
@@ -26,7 +26,7 @@ graphs.get_graph_by_option(option)
 st.sidebar.title('Choose District')
 district = st.sidebar.selectbox('  ',('Select district', 'Ciutat Vella', 'Horta-Guinardó', 'Sants-Montjuïc', 'Sarrià-Sant Gervasi', 'Sant Martí', 'Gràcia', 'Eixample', 'Nou Barris', 'Sant Andreu', 'Les Corts'))
 
-targets.get_target_by_district(district)
+card.get_card_by_district(district)
 
 st.sidebar.title('Choose your Map')
 map_option=st.sidebar.selectbox('  ',('Select Map', 'Map Parks', "Map Dog's Areas"))

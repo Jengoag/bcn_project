@@ -2,29 +2,29 @@ import streamlit as st
 import requests
 import math
 
-def get_target_by_district(district):
+def get_card_by_district(district):
     if district == "Ciutat Vella":
-        get_target(0, "#A08508")
+        get_card(0, "#A08508")
     if district == "Horta-Guinardó":
-        get_target(1, "#A02922")
+        get_card(1, "#A02922")
     if district == "Sants-Montjuïc":
-        get_target(2, "#83a971")
+        get_card(2, "#83a971")
     if district == "Sarrià-Sant Gervasi":
-        get_target(3, "#746393")
+        get_card(3, "#746393")
     if district == "Sant Martí":
-        get_target(4, "#e08f78")
+        get_card(4, "#e08f78")
     if district == "Gràcia":
-        get_target(5, "#3f7284")
+        get_card(5, "#3f7284")
     if district == "Eixample":
-        get_target(6, "#87a757")
+        get_card(6, "#87a757")
     if district == "Nou Barris":
-        get_target(7, "#dc7082")
+        get_card(7, "#dc7082")
     if district == "Sant Andreu":
-        get_target(8, "#eacf84")
+        get_card(8, "#eacf84")
     if district == "Les Corts":
-        get_target(9, "#506a75")
+        get_card(9, "#506a75")
 
-def get_target(index, color):
+def get_card(index, color):
     st.markdown(f"<h1 style='text-align: center; color: {color} '> {get_population()[index]['district']} </h1>", unsafe_allow_html = True)
     st.text('')
     

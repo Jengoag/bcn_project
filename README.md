@@ -77,7 +77,7 @@ For this, all the files are in the `src` folder, these are:
 
 - `streamlite.py` - All requests made to API.
 - `graphs.py` - All graphs and maps.
-- `target.py` - All data cards pre-collected by district.
+- `card.py` - All data cards pre-collected by district.
 
 
 ### TOOLS
